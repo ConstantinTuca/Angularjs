@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Constantin",
+        "hat": "green",
+        "rate": 50,
+        "available": true,
+        "thumb": "contentimgcat.png"
+    },
+    {
+        "name": "Ana",
+        "hat": "red",
+        "rate": 30,
+        "available": true,
+        "thumb": "contentimgcat.png"
+    },
+    {
+        "name": "Jon",
+        "hat": "black",
+        "rate": 60,
+        "available": true,
+        "thumb": "contentimgcat.png"
+    }
+]

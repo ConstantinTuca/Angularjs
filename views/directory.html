@@ -1,0 +1,24 @@
+<div class="content">
+  <button ng-click="order = 'name'">Order by Name</button>
+  <button ng-click="order = 'hat'">Order by Hat</button>
+  <input type="text" ng-model="search" placeholder="Search for a name" />
+  <ul>
+    <li
+      ng-repeat="num in nume | orderBy: name | filter: search"
+      ng-hide="hide"
+    >
+      <!-- <img ng-src="{{num.thumb}}" style="margin: -12px 10px 0 0; float: left; width: 50px;" ng-show="num.thumb"> -->
+      <h3>{{num.name}} - {{num.rate}}</h3>
+      <div class="remove" ng-click="removeNume(num)">x</div>
+      <span class="belt" style="background: {{num.hat}}"
+        >{{num.hat}} belt
+      </span>
+    </li>
+  </ul>
+  <form ng-submit="addNume()">
+    <input type="text" placeholder="name" ng-model="newname.name" />
+    <input type="text" placeholder="hat" ng-model="newname.hat" />
+    <input type="text" placeholder="rate" ng-model="newname.rate" />
+    <input type="submit" value="Add new names" />
+  </form>
+</div>
